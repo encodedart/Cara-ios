@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserPicker" customModule="Cara" customModuleProvider="target">
+            <connections>
+                <outlet property="custBtn" destination="bVr-1L-eDp" id="3ko-IJ-c09"/>
+                <outlet property="driverBtn" destination="5ad-3L-odS" id="KF8-4o-5BQ"/>
+                <outlet property="view" destination="iN0-l3-epB" id="tdb-ff-ixw"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bVr-1L-eDp">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="334"/>
+                    <color key="backgroundColor" red="0.58431372550000005" green="0.7843137255" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="40"/>
+                    <state key="normal" title="Customer">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ad-3L-odS">
+                    <rect key="frame" x="0.0" y="334" width="375" height="333"/>
+                    <color key="backgroundColor" red="0.19215686269999999" green="0.40000000000000002" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="40"/>
+                    <state key="normal" title="Driver">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="bVr-1L-eDp" secondAttribute="trailing" id="6vj-Sp-9fj"/>
+                <constraint firstItem="bVr-1L-eDp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="8wh-oa-q48"/>
+                <constraint firstItem="5ad-3L-odS" firstAttribute="top" secondItem="bVr-1L-eDp" secondAttribute="bottom" id="YOD-Bk-w3R"/>
+                <constraint firstItem="bVr-1L-eDp" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" multiplier="0.5" id="m3n-sU-cst"/>
+                <constraint firstAttribute="bottom" secondItem="5ad-3L-odS" secondAttribute="bottom" id="nz9-ix-s92"/>
+                <constraint firstItem="5ad-3L-odS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="sPn-Xr-ATz"/>
+                <constraint firstItem="bVr-1L-eDp" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="u52-sT-muJ"/>
+                <constraint firstAttribute="trailing" secondItem="5ad-3L-odS" secondAttribute="trailing" id="xyN-FU-nXj"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

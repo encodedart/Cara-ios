@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Cusotmer" customModule="Cara" customModuleProvider="target">
+            <connections>
+                <outlet property="backError" destination="BNP-vB-pEx" id="AjZ-hU-CdY"/>
+                <outlet property="frontErrorTxt" destination="eIG-X1-E4N" id="3jm-uZ-bHM"/>
+                <outlet property="newOrderBtn" destination="iLZ-2q-OKp" id="VGD-DZ-0ID"/>
+                <outlet property="orderDateTxt" destination="1Ez-qs-bS0" id="uA7-2s-xES"/>
+                <outlet property="orderInfo" destination="LOp-sX-Ynf" id="pb2-uR-27F"/>
+                <outlet property="orderNumTxt" destination="4nx-m2-tMY" id="rwl-tg-R4m"/>
+                <outlet property="placeOrderBtn" destination="qXc-r5-b2d" id="DgN-SP-DsB"/>
+                <outlet property="trackingBtn" destination="3Df-a2-Svo" id="F3K-eT-qST"/>
+                <outlet property="trackingNumberInput" destination="vlt-K2-pkd" id="k27-gi-xah"/>
+                <outlet property="view" destination="iN0-l3-epB" id="TMQ-pg-Vmc"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qXc-r5-b2d">
+                    <rect key="frame" x="93" y="304" width="189" height="59"/>
+                    <color key="backgroundColor" red="0.58431372550000005" green="0.7843137255" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                    <inset key="contentEdgeInsets" minX="30" minY="15" maxX="30" maxY="15"/>
+                    <state key="normal" title="Place Order">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Waiting for Diver's Location Update" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BNP-vB-pEx">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="592"/>
+                    <color key="backgroundColor" red="0.13381410260000001" green="0.13381410260000001" blue="0.13381410260000001" alpha="0.75026939655517244" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LOp-sX-Ynf">
+                    <rect key="frame" x="0.0" y="592" width="375" height="75"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Order: #756" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4nx-m2-tMY">
+                            <rect key="frame" x="15" y="20" width="83.5" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ez-qs-bS0">
+                            <rect key="frame" x="15" y="38" width="31" height="15"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iLZ-2q-OKp">
+                            <rect key="frame" x="262" y="21" width="98" height="34"/>
+                            <color key="backgroundColor" red="0.58431372550000005" green="0.7843137255" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <inset key="contentEdgeInsets" minX="12" minY="8" maxX="12" maxY="8"/>
+                            <state key="normal" title="New Order">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.08974360961180472" green="0.08974360961180472" blue="0.08974360961180472" alpha="0.5143588362068966" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="1Ez-qs-bS0" firstAttribute="top" secondItem="4nx-m2-tMY" secondAttribute="bottom" id="HKV-RT-72h"/>
+                        <constraint firstItem="4nx-m2-tMY" firstAttribute="leading" secondItem="LOp-sX-Ynf" secondAttribute="leading" constant="15" id="V4P-Xg-Srg"/>
+                        <constraint firstAttribute="trailing" secondItem="iLZ-2q-OKp" secondAttribute="trailing" constant="15" id="a3v-dd-W3O"/>
+                        <constraint firstItem="1Ez-qs-bS0" firstAttribute="leading" secondItem="LOp-sX-Ynf" secondAttribute="leading" constant="15" id="gt2-d3-ZWN"/>
+                        <constraint firstItem="iLZ-2q-OKp" firstAttribute="centerY" secondItem="LOp-sX-Ynf" secondAttribute="centerY" id="jGJ-t1-fXK"/>
+                        <constraint firstItem="4nx-m2-tMY" firstAttribute="top" secondItem="LOp-sX-Ynf" secondAttribute="top" constant="20" id="nWz-TI-QFs"/>
+                        <constraint firstAttribute="height" constant="75" id="q8c-hi-n6D"/>
+                    </constraints>
+                </view>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="Order Number" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="vlt-K2-pkd">
+                    <rect key="frame" x="88" y="180" width="200" height="40"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="f3k-yM-fzu"/>
+                        <constraint firstAttribute="width" constant="200" id="mFt-Jg-v1W"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad" enablesReturnKeyAutomatically="YES"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Df-a2-Svo">
+                    <rect key="frame" x="88" y="230" width="200" height="40"/>
+                    <color key="backgroundColor" red="0.19215686269999999" green="0.40000000000000002" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="bXJ-on-GBT"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <inset key="contentEdgeInsets" minX="20" minY="8" maxX="20" maxY="8"/>
+                    <state key="normal" title="Provide Tracking">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Internet connection. Plase connect to internet for app data update" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eIG-X1-E4N">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" red="0.050340544907692353" green="0.050340544907692353" blue="0.050340544907692353" alpha="0.78054956896896555" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.19215686269999999" green="0.40000000000000002" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="eIG-X1-E4N" secondAttribute="trailing" id="1je-d8-9VT"/>
+                <constraint firstItem="BNP-vB-pEx" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="2Hq-4w-x1l"/>
+                <constraint firstAttribute="trailing" secondItem="BNP-vB-pEx" secondAttribute="trailing" id="3ZH-uV-dHL"/>
+                <constraint firstAttribute="bottom" secondItem="LOp-sX-Ynf" secondAttribute="bottom" id="3jC-YM-4CB"/>
+                <constraint firstItem="BNP-vB-pEx" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="6V4-PZ-i7P"/>
+                <constraint firstAttribute="trailing" secondItem="LOp-sX-Ynf" secondAttribute="trailing" id="79v-Xa-6z9"/>
+                <constraint firstItem="LOp-sX-Ynf" firstAttribute="top" secondItem="BNP-vB-pEx" secondAttribute="bottom" id="7yU-Gf-bc5"/>
+                <constraint firstItem="vlt-K2-pkd" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ATO-WS-kAW"/>
+                <constraint firstItem="qXc-r5-b2d" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="GJ6-d2-IPO"/>
+                <constraint firstItem="3Df-a2-Svo" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="KYG-9W-tLU"/>
+                <constraint firstItem="LOp-sX-Ynf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Ohw-GG-NhG"/>
+                <constraint firstItem="eIG-X1-E4N" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="SmG-1X-UWt"/>
+                <constraint firstItem="eIG-X1-E4N" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="aB2-g1-di7"/>
+                <constraint firstItem="qXc-r5-b2d" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="bUv-a2-vRr"/>
+                <constraint firstAttribute="bottom" secondItem="eIG-X1-E4N" secondAttribute="bottom" id="n1y-bL-npG"/>
+                <constraint firstItem="3Df-a2-Svo" firstAttribute="top" secondItem="vlt-K2-pkd" secondAttribute="bottom" constant="10" id="o57-N5-0Qp"/>
+                <constraint firstItem="vlt-K2-pkd" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="180" id="sUO-ba-J3c"/>
+            </constraints>
+            <point key="canvasLocation" x="24.5" y="52.5"/>
+        </view>
+    </objects>
+</document>

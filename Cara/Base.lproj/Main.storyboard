@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Cara" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EnN-21-jmv">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="334"/>
+                                <color key="backgroundColor" red="0.58431372550000005" green="0.7843137255" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="40"/>
+                                <state key="normal" title="Customer">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iHl-mc-DOo">
+                                <rect key="frame" x="0.0" y="334" width="375" height="333"/>
+                                <color key="backgroundColor" red="0.19215686274509805" green="0.40000000000000002" blue="0.52941176470588236" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="40"/>
+                                <state key="normal" title="Driver">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="iHl-mc-DOo" secondAttribute="bottom" id="7Uh-xl-DRf"/>
+                            <constraint firstItem="iHl-mc-DOo" firstAttribute="top" secondItem="EnN-21-jmv" secondAttribute="bottom" id="HVm-uV-jZ1"/>
+                            <constraint firstItem="EnN-21-jmv" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" multiplier="0.5" id="R9e-nn-rFA"/>
+                            <constraint firstItem="EnN-21-jmv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="RWu-jR-lri"/>
+                            <constraint firstAttribute="trailing" secondItem="iHl-mc-DOo" secondAttribute="trailing" id="ZeV-GL-Cjm"/>
+                            <constraint firstAttribute="trailing" secondItem="EnN-21-jmv" secondAttribute="trailing" id="h8J-Ry-LEd"/>
+                            <constraint firstItem="iHl-mc-DOo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="iLy-3l-U7y"/>
+                            <constraint firstItem="EnN-21-jmv" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="pww-I2-L5c"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
+        </scene>
+    </scenes>
+</document>
